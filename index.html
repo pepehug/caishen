@@ -3,47 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Golden Street Club</title>
+  <title>Golden Street Caishen Poker Club</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-    header { background: #222; color: #fff; padding: 2rem; text-align: center; }
-    nav { background: #444; padding: 1rem; text-align: center; }
-    nav a { color: #fff; margin: 0 1rem; text-decoration: none; }
-    section { padding: 2rem; max-width: 900px; margin: auto; }
-    h1, h2 { color: #333; }
-    footer { background: #222; color: #fff; text-align: center; padding: 1rem; }
+    body { font-family: 'Montserrat', sans-serif; margin: 0; background: #0f0f0f; color: #eee; }
+    header { background: linear-gradient(135deg, #111, #b8860b); color: #fff; padding: 4rem 2rem; text-align: center; }
+    header h1 { font-family: 'Playfair Display', serif; font-size: 3rem; margin: 0; }
+    header p { font-size: 1.2rem; margin-top: 1rem; max-width: 700px; margin-left: auto; margin-right: auto; }
+    nav { background: #1c1c1c; padding: 1rem; text-align: center; }
+    nav a { color: #ffd700; margin: 0 1rem; text-decoration: none; font-weight: 600; transition: color 0.3s; }
+    nav a:hover { color: #fff; }
+    section { padding: 4rem 2rem; max-width: 1000px; margin: auto; }
+    h2 { font-family: 'Playfair Display', serif; color: #ffd700; margin-bottom: 1rem; }
+    .highlight { background: #1c1c1c; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.5); margin-bottom: 2rem; }
+    ul { list-style: none; padding: 0; }
+    ul li { margin: 0.8rem 0; font-size: 1.1rem; }
+    a.button { display: inline-block; background: #ffd700; color: #111; padding: 0.8rem 1.5rem; border-radius: 5px; text-decoration: none; font-weight: bold; transition: background 0.3s; }
+    a.button:hover { background: #fff; color: #111; }
+    footer { background: #111; color: #aaa; text-align: center; padding: 2rem; font-size: 0.9rem; }
+    .hero-img, .section-img { width: 100%; border-radius: 10px; margin-bottom: 1.5rem; }
   </style>
 </head>
 <body>
   <header>
-    <h1>Golden Street Club</h1>
-    <p>Phnom Penh’s Premier Entertainment & Community Venue</p>
+    <h1>Golden Street Caishen Poker Club</h1>
+    <p>致力于打造金边最公平、最低抽水、最具人气的线下德州交流平台<br>
+    We are committed to building the fairest, lowest-rake, and most popular live poker community in Phnom Penh.</p>
+    <img src="images/phnom-penh-skyline.jpg" alt="Phnom Penh Skyline" class="hero-img">
   </header>
+
   <nav>
-    <a href="#about">About</a>
-    <a href="#events">Events</a>
-    <a href="#community">Community</a>
+    <a href="#stakes">Stakes</a>
+    <a href="#environment">Environment</a>
+    <a href="#tournaments">Tournaments</a>
     <a href="#contact">Contact</a>
   </nav>
-  <section id="about">
-    <h2>About Us</h2>
-    <p>We are committed to building a welcoming and vibrant community space in Phnom Penh, offering entertainment, networking, and cultural exchange.</p>
+
+  <section id="stakes">
+    <h2>♠️ Multiple Stakes Available</h2>
+    <img src="images/poker-tables.jpg" alt="Poker Table Stakes" class="section-img">
+    <div class="highlight">
+      <ul>
+        <li>1/2 ｜ 1/3 — Rake Cap: $5</li>
+        <li>2/5 — Rake Cap: $20</li>
+        <li>5/5 ｜ 10/10 ｜ 10/20 — From casual games to competitive action</li>
+      </ul>
+    </div>
   </section>
-  <section id="events">
-    <h2>Events</h2>
-    <p>From casual meetups to monthly gatherings, we host a variety of activities for people of all backgrounds.</p>
+
+  <section id="environment">
+    <h2>🎯 Elegant & Comfortable Environment</h2>
+    <img src="images/lounge.jpg" alt="Elegant Lounge" class="section-img">
+    <div class="highlight">
+      <ul>
+        <li>🥤 Complimentary Drinks</li>
+        <li>🚬 Free Cigarettes & Betel Nut</li>
+        <li>💆 Free Massage Service</li>
+        <li>🌍 Players from Around the World</li>
+      </ul>
+    </div>
   </section>
-  <section id="community">
-    <h2>Community</h2>
-    <p>Join a diverse group of members from around the world. More than just events — it’s an experience and a connection.</p>
+
+  <section id="tournaments">
+    <h2>🏆 Monthly Poker Tournaments</h2>
+    <img src="images/tournament.jpg" alt="Poker Tournament Poster" class="section-img">
+    <div class="highlight">
+      <p>Big Prizes · Great Atmosphere · Fair Play</p>
+    </div>
   </section>
+
   <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: info@goldenstreetclub.com</p>
-    <p>Location: Phnom Penh, Cambodia</p>
+    <h2>Contact & Community</h2>
+    <img src="images/community.jpg" alt="Community Poker Game" class="section-img">
+    <div class="highlight">
+      <p>More than just a game — it’s an experience and a community.<br>
+      Golden Street Caishen Poker Club welcomes you. ♠️</p>
+      <p><a class="button" href="https://t.me/+kjSP4mcr74BjMTk1" target="_blank">Join Us on Telegram</a></p>
+    </div>
   </section>
+
   <footer>
-    <p>&copy; 2026 Golden Street Club</p>
+    <p>&copy; 2026 Golden Street Caishen Poker Club</p>
   </footer>
 </body>
 </html>
