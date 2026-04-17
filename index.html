@@ -1,90 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Golden Street Caishen Poker Club</title>
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Montserrat', sans-serif; margin: 0; background: #0f0f0f; color: #eee; }
-    header { background: linear-gradient(135deg, #111, #b8860b); color: #fff; padding: 4rem 2rem; text-align: center; }
-    header h1 { font-family: 'Playfair Display', serif; font-size: 3rem; margin: 0; }
-    header p { font-size: 1.2rem; margin-top: 1rem; max-width: 700px; margin-left: auto; margin-right: auto; }
-    nav { background: #1c1c1c; padding: 1rem; text-align: center; }
-    nav a { color: #ffd700; margin: 0 1rem; text-decoration: none; font-weight: 600; transition: color 0.3s; }
-    nav a:hover { color: #fff; }
-    section { padding: 4rem 2rem; max-width: 1000px; margin: auto; }
-    h2 { font-family: 'Playfair Display', serif; color: #ffd700; margin-bottom: 1rem; }
-    .highlight { background: #1c1c1c; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.5); margin-bottom: 2rem; }
-    ul { list-style: none; padding: 0; }
-    ul li { margin: 0.8rem 0; font-size: 1.1rem; }
-    a.button { display: inline-block; background: #ffd700; color: #111; padding: 0.8rem 1.5rem; border-radius: 5px; text-decoration: none; font-weight: bold; transition: background 0.3s; }
-    a.button:hover { background: #fff; color: #111; }
-    footer { background: #111; color: #aaa; text-align: center; padding: 2rem; font-size: 0.9rem; }
-    .hero-img, .section-img { width: 100%; border-radius: 10px; margin-bottom: 1.5rem; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caishen Poker Club | 财神扑克俱乐部 - Phnom Penh</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Noto+Sans+SC:wght@400;700&family=Outfit:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Outfit', 'Noto Sans SC', sans-serif; background: #050505; color: #e5e7eb; }
+        .font-luxury { font-family: 'Cinzel', serif; }
+        .gold-shimmer {
+            background: linear-gradient(90deg, #8a6d3b, #d4af37, #f7ef8a, #d4af37, #8a6d3b);
+            background-size: 200% auto;
+            animation: shimmer 3s linear infinite;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        @keyframes shimmer { to { background-position: 200% center; } }
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.95)), url('hero.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .poker-card-bg { background: rgba(20, 20, 20, 0.8); border: 1px solid rgba(212, 175, 55, 0.2); }
+    </style>
 </head>
-<body>
-  <header>
-    <h1>Golden Street Caishen Poker Club</h1>
-    <p>致力于打造金边最公平、最低抽水、最具人气的线下德州交流平台<br>
-    We are committed to building the fairest, lowest-rake, and most popular live poker community in Phnom Penh.</p>
-    <img src="images/phnom-penh-skyline.jpg" alt="Phnom Penh Skyline" class="hero-img">
-  </header>
+<body class="pb-24">
 
-  <nav>
-    <a href="#stakes">Stakes</a>
-    <a href="#environment">Environment</a>
-    <a href="#tournaments">Tournaments</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <header class="hero-bg min-h-[50vh] flex flex-col items-center justify-center text-center px-6 border-b border-yellow-600/20">
+        <h1 class="font-luxury text-5xl md:text-8xl text-white mb-2 tracking-tighter">GOLDEN STREET</h1>
+        <h2 class="font-luxury text-2xl md:text-4xl gold-shimmer mb-4 uppercase">CAISHEN POKER CLUB</h2>
+        <p class="text-yellow-600 font-bold tracking-[0.2em] uppercase text-xs mb-8">
+            Phnom Penh's Premier Texas Hold'em • 金边专业德州扑克俱乐部
+        </p>
+        <a href="https://t.me/+kjSP4mcr74BjMTk1" class="bg-yellow-600 text-black px-10 py-3 rounded-full font-bold uppercase tracking-widest text-sm shadow-xl shadow-yellow-600/30">
+            Join Telegram / 加入电报群
+        </a>
+    </header>
 
-  <section id="stakes">
-    <h2>♠️ Multiple Stakes Available</h2>
-    <img src="images/poker-tables.jpg" alt="Poker Table Stakes" class="section-img">
-    <div class="highlight">
-      <ul>
-        <li>1/2 ｜ 1/3 — Rake Cap: $5</li>
-        <li>2/5 — Rake Cap: $20</li>
-        <li>5/5 ｜ 10/10 ｜ 10/20 — From casual games to competitive action</li>
-      </ul>
-    </div>
-  </section>
+    <section class="max-w-6xl mx-auto py-16 px-6">
+        <div class="grid md:grid-cols-3 gap-8">
+            
+            <div class="poker-card-bg p-6 rounded-3xl text-center">
+                <p class="text-yellow-500 font-bold text-3xl mb-1">1/2 | 1/3</p>
+                <p class="text-[10px] uppercase tracking-widest text-gray-400 mb-4 font-bold">Social Play / 休闲桌</p>
+                <div class="rounded-2xl overflow-hidden mb-4 h-48 w-full border border-white/5">
+                    <img src="hero.jpg" class="h-full w-full object-cover" alt="Club Environment">
+                </div>
+                <div class="text-xs text-gray-400 space-y-1">
+                    <p class="font-bold text-white">Rake Cap: $5</p>
+                    <p>服务费封顶: 5美金</p>
+                </div>
+            </div>
+            
+            <div class="poker-card-bg p-6 rounded-3xl text-center border-yellow-600/50 shadow-2xl relative">
+                <div class="absolute top-4 right-4 bg-yellow-600 text-black px-2 py-0.5 text-[8px] font-black uppercase rounded">Hot / 热门</div>
+                <p class="text-yellow-500 font-bold text-3xl mb-1">2/5 | 5/5</p>
+                <p class="text-[10px] uppercase tracking-widest text-gray-300 mb-4 font-bold">Main Action / 标准桌</p>
+                <div class="rounded-2xl overflow-hidden mb-4 h-48 w-full border border-yellow-600/20">
+                    <img src="stakes.jpg" class="h-full w-full object-cover" alt="Poker Action">
+                </div>
+                <div class="text-xs text-gray-200 space-y-1">
+                    <p class="font-bold text-yellow-500">Rake Cap: $20</p>
+                    <p>服务费封顶: 20美金</p>
+                </div>
+            </div>
 
-  <section id="environment">
-    <h2>🎯 Elegant & Comfortable Environment</h2>
-    <img src="images/lounge.jpg" alt="Elegant Lounge" class="section-img">
-    <div class="highlight">
-      <ul>
-        <li>🥤 Complimentary Drinks</li>
-        <li>🚬 Free Cigarettes & Betel Nut</li>
-        <li>💆 Free Massage Service</li>
-        <li>🌍 Players from Around the World</li>
-      </ul>
-    </div>
-  </section>
+            <div class="poker-card-bg p-6 rounded-3xl text-center">
+                <p class="text-yellow-500 font-bold text-3xl mb-1">10/20+</p>
+                <p class="text-[10px] uppercase tracking-widest text-gray-400 mb-4 font-bold">VIP High Stakes / 大分桌</p>
+                <div class="rounded-2xl overflow-hidden mb-4 h-48 w-full border border-white/5">
+                    <img src="vip.jpg" class="h-full w-full object-cover" alt="VIP Experience">
+                </div>
+                <div class="text-xs text-gray-400 space-y-1">
+                    <p class="font-bold text-white">Elite Invitation Only</p>
+                    <p>VIP 专属邀请制</p>
+                </div>
+            </div>
 
-  <section id="tournaments">
-    <h2>🏆 Monthly Poker Tournaments</h2>
-    <img src="images/tournament.jpg" alt="Poker Tournament Poster" class="section-img">
-    <div class="highlight">
-      <p>Big Prizes · Great Atmosphere · Fair Play</p>
-    </div>
-  </section>
+        </div>
+    </section>
 
-  <section id="contact">
-    <h2>Contact & Community</h2>
-    <img src="images/community.jpg" alt="Community Poker Game" class="section-img">
-    <div class="highlight">
-      <p>More than just a game — it’s an experience and a community.<br>
-      Golden Street Caishen Poker Club welcomes you. ♠️</p>
-      <p><a class="button" href="https://t.me/+kjSP4mcr74BjMTk1" target="_blank">Join Us on Telegram</a></p>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2026 Golden Street Caishen Poker Club</p>
-  </footer>
-</body>
-</html>
+    <section class="max-w-4xl mx-auto py-10 px-6 border-t border-white/5 text-center">
+        <h3 class="font-luxury gold-shimmer text-xl mb-12 tracking-widest uppercase">The Standard / 顶级服务</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="flex flex-col items-center">
+                <span class="text-3xl mb-2">🍹</span>
+                <p class="text-[10px] font-bold text-white uppercase">Complimentary Bar</p>
+                <p class="text-[9px] text-gray-500">免费吧台饮品</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <span class="text-3xl mb-2">💆</span>
+                <p class="text-[10px] font-bold text-white uppercase">In-House Massage</p>
+                <p class="text-[9px] text-gray-500">专业推拿服务</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <span class="text-3xl mb-2">🚬</span>
+                <p class="text-[10px] font-bold text-white uppercase">Free Cigarettes</p>
+                <p class
